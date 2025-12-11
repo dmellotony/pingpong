@@ -1,0 +1,59 @@
+:root{
+  --bg:#0b1220;
+  --panel:#0f1724;
+  --accent:#00d1ff;
+  --text:#e6eef6;
+}
+
+*{box-sizing:border-box}
+html,body{
+  height:100%;
+  margin:0;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+  background:linear-gradient(180deg,var(--bg),#07111a 60%);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.container{
+  max-width:960px;
+  margin:40px auto;
+  text-align:center;
+}
+
+h1{
+  margin:0 0 10px 0;
+  font-weight:600;
+  letter-spacing:1px;
+}
+
+.scoreboard{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin:10px 0;
+  color:var(--text);
+}
+
+.score{
+  background:rgba(255,255,255,0.03);
+  padding:8px 12px;
+  border-radius:6px;
+  font-weight:600;
+}
+
+canvas{
+  display:block;
+  margin:12px auto;
+  background:linear-gradient(180deg,#071226,#02101a);
+  border:2px solid rgba(255,255,255,0.06);
+  box-shadow: 0 6px 22px rgba(0,0,0,0.6);
+  cursor: none; /* hide cursor to encourage mouse paddle feel */
+}
+
+.controls{
+  margin-top:8px;
+  font-size:13px;
+  color:rgba(230,238,246,0.75);
+}
